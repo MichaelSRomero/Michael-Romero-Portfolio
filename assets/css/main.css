@@ -2232,6 +2232,12 @@ input, select, textarea {
 				top: 0;
 				width: 1em;
 			}
+/* Actions */
+
+ul.bottom {
+	position: absolute;
+	bottom: 0;
+}
 
 /* Actions */
 
