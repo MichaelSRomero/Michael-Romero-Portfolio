@@ -235,6 +235,11 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.work-item p {
+		height: 10em;
+		margin-bottom: 1em !important;
+	}
+
 /* Container */
 
 	.container {
@@ -2232,12 +2237,6 @@ input, select, textarea {
 				top: 0;
 				width: 1em;
 			}
-/* Actions */
-
-ul.bottom {
-	position: absolute;
-	bottom: 0;
-}
 
 /* Actions */
 
@@ -2311,6 +2310,15 @@ ul.bottom {
 			}
 
 		@media screen and (max-width: 480px) {
+
+			.work-item p {
+				height: inherit !important;
+				margin-bottom: 1em !important;
+			}
+
+			ul.bottom {
+				position: unset;
+			}
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3120,8 +3128,10 @@ ul.bottom {
 /* Small */
 
 	@media screen and (max-width: 736px) {
-
 		/* Basic */
+			.work-item p {
+				height: 14em;
+			}
 
 			h1 {
 				font-size: 1.5em;
